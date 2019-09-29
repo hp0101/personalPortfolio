@@ -8,17 +8,89 @@ EMAIL: hpphan@uci.edu
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="author" content="Hung Phan">
+  <meta name="description" content="Hung Phan's Portfolio">
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <title>Hung Phan</title>
 </head>
-<body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+
+<body style="margin: 0">
+  <!-- intro -->
+  <div style="height: 50vh; display: flex; align-items: center; flex-direction: column; 
+  background-repeat: no-repeat; background-image: url(background.jpg); justify-content: center;
+  background-size: cover;">
+    <!-- background-size: cover -> Resize the background image to cover the entire container-->
+    <img src="profilePic.jpg" alt="profilePic" style="border-radius: 50%; max-width: 100%; max-height: 100%;">
+    <h1 style="color: white; text-align: center; ">Hung Phan</h1>
+    <h3 style="color: white; text-align: center; ">iOS Developer | Computer Science
+      Undergraduate at UC Irvine</h3>
+    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
+      <a href="https://www.linkedin.com/in/hung-p-0b3547162/" style="padding-right: 0.5%">
+        <img src="linkedin.png" style="height: 64px; width: 64px; " alt="linkedin">
+      </a>
+      <a href="https://github.com/hp0101" style="padding-left: 0.5%">
+        <img src="github.png" style="height: 64px; width: 64px; " alt="github">
+      </a>
+    </div>
+  </div>
+  <!-- about -->
+  <h2 style="text-align: center; margin-bottom: 0">
+    About
+  </h2>
+  <div class="effect"
+    style="margin-left:25%; margin-right:25%; max-width: 50%; height: auto; padding: 1em; min-width: 100px">
+    <p style="word-break: break-all">
+      Seek a full-time Software Engineer position after graduation in June 2020. Experience in developing iOS
+      applications utilizing either Swift or React Native and constructing a full-stack e-commerce website similar to
+      Amazon and eBay.
+    </p>
+  </div>
+  <!-- education -->
+  <h2 style="text-align: center; margin-bottom: 0">
+    Education
+  </h2>
+  <!-- UCI -->
+  <div class="effect"
+    style="margin-left:25%; margin-right:25%; max-width: 50%; height: auto; display: flex; flex-direction: row; min-width: 100px; padding: 1em;">
+    <div style="width: 30%; display: flex; align-items: center; justify-content: center; margin: 20px">
+      <p style="word-break: break-all">September 2018 - June 2020</p>
+    </div>
+    <hr>
+    <div style="width: 70%; margin: 20px">
+      <p style="word-break: break-all">
+        University of California, Irvine<br>
+        Bachelor of Science, Computer Science
+      </p>
+      <p style="word-break: break-all">
+        Courses completed at UCI:<br>
+        CS 122A - Introduction to Data Management<br>
+        CS 141 - Concepts of Programming Language<br>
+        CS 122B - Projects in Databases and Web Applications<br>
+        CS 121 - Information Retrieval<br>
+        CS 132 - Computer Networks<br>
+        IN4MATX 117 - Project in Software System Design<br>
+      </p>
+    </div>
+  </div>
+  <!-- OCC -->
+  <div class="effect"
+    style="margin-top:20px; margin-left:25%; margin-right:25%; max-width: 50%; height: auto; display: flex; flex-direction: row; min-width: 100px; padding: 1em;">
+    <div style="width: 30%; display: flex; align-items: center; justify-content: center; margin: 20px">
+      <p style="word-break: break-all">June 2016 - May 2018</p>
+    </div>
+    <hr>
+    <div style="width: 70%; margin: 20px">
+      <p style="word-break: break-all">
+        Orange Coast College<br>
+        Associate of Science, CIS Computer Programming
+      </p>
+      <p style="word-break: break-all">
+          Courses completed at Orange Coast College that satisfy AS degree requirements:<br>
+          <a href="http://www.orangecoastcollege.edu/academics/divisions/business/Documents/COMPUTER%20PROGRAMMING.pdf">http://www.orangecoastcollege.edu/academics/divisions/business/Documents/COMPUTER%20PROGRAMMING.pdf</a>
+      </p>
+    </div>
+  </div>
 </body>
+
 </html>
