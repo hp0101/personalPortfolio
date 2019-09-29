@@ -1,16 +1,20 @@
-/* override h1 */
-/* h1 {
-    margin: 0
-} */
-/* override h3 */
-/* h3 {
-    margin: 0
-} */
-
+/* box shadow effect */
 .effect
 {
     position:relative;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+ul li {
+    word-break: break-all;
+}
+
+p {
+    word-break: break-word
+}
+
+a:link, a:hover, a:active {
+    color: blue;
 }
