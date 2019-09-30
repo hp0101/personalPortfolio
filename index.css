@@ -16,8 +16,12 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.fadeInFromTopToBottom {
-    animation: fadeInFromTopToBottom 1s; 
+.fadeInFromLeftToRight {
+    animation: fadeInFromLeftToRight 1s; 
+}
+
+.fadeInFromRightToLeft {
+    animation: fadeInFromRightToLeft 1s;
 }
 
 .delay {
@@ -28,12 +32,23 @@ body {
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeInFromTopToBottom {
-    from { 
+@keyframes fadeInFromLeftToRight {
+    0% { 
         opacity: 0;
-        transform: translate3d(0, -50%, 0);
+        transform: translate3d(-100%, 0, 0);
     }
-    to   { 
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInFromRightToLeft {
+    0% { 
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
