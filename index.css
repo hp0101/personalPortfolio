@@ -15,6 +15,6 @@ p {
     word-break: break-word
 }
 
-a:link, a:hover, a:active {
-    color: blue;
+a:visited {
+    color: blue
 }
