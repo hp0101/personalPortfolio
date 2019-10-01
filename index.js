@@ -129,4 +129,35 @@ var onresize = function (e) {
     }
 }
 window.addEventListener("resize", onresize);
+const hi = document.getElementById("hi");
+// animate when scrolling
+var dist = 100;
 
+window.onscroll = function () {
+
+    if (isScrolledIntoView(hi)) {
+        hi.style.background = "red"
+    } else {
+        hi.style.background = ""
+    }
+
+    // for (var i = 0; i < animatedElements.length; i++) {
+    //     if (isScrolledIntoView(animatedElements[i])) {
+    //         console.log('in view');
+    //     } else {
+    //         console.log('out of view');
+    //     }
+    // }
+};
+
+function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    // Only completely visible elements return true:
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
+}
