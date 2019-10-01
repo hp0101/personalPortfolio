@@ -7,3 +7,18 @@ for (var i = 0; i < animatedElements.length; i++) {
         animatedElements[i].classList.add("fadeInFromRightToLeft")
     }
 }
+
+console.log("initial screen width=" + screen.width)
+if (screen.width < 600) {
+    
+}
+
+var onresize = function(e) {
+    //note i need to pass the event as an argument to the function
+    width = e.target.outerWidth;
+    height = e.target.outerHeight;
+
+    console.log("resizing width=" + width)
+ }
+ window.addEventListener("resize", onresize);
+
