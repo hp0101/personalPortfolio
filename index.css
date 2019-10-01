@@ -55,9 +55,21 @@ body {
 }
 
 .eachTitle {
-    margin-left: 10%; text-align: left; margin-bottom: 0
+margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
 }
 
 .container {
-    margin-top:10px; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; min-width: 250px
+    border-radius: 10px; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; min-width: 250px
+}
+
+.paddingForContainer {
+    margin-top:10px;
+}
+
+.leftInnerContainer {
+    width: 30%; display: flex; align-items: center; justify-content: center; margin: 10px
+}
+
+.rightInnerContainer {
+    width: 70%; margin: 10px
 }
