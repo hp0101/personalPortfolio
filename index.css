@@ -59,7 +59,7 @@ margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
 }
 
 .container {
-    border-radius: 10px; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; min-width: 250px
+    border-radius: 0.2rem; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; min-width: 250px
 }
 
 .paddingForContainer {
