@@ -55,11 +55,15 @@ body {
 }
 
 .eachTitle {
-margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
+    margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
 }
 
 .container {
-    border-radius: 0.2rem; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; min-width: 250px
+    border-radius: 0.2rem; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em;
+}
+
+.containerMobile {
+    flex-wrap: wrap; border-radius: 0.2rem; display: flex; flex-direction: column; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; 
 }
 
 .paddingForContainer {
@@ -70,6 +74,15 @@ margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
     width: 30%; display: flex; align-items: center; justify-content: center; margin: 10px
 }
 
+.leftInnerContainerMobile {
+    width: 100%; display: flex; align-items: left; margin: 10px
+
+}
+
 .rightInnerContainer {
     width: 70%; margin: 10px
+}
+
+.rightInnerContainerMobile {
+    width: 100%; margin: 10px
 }
