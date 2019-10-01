@@ -54,6 +54,11 @@ body {
     }
 }
 
+.hrWidth {
+    width: 100%;
+    margin: 0;
+}
+
 .eachTitle {
     margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
 }
@@ -75,7 +80,7 @@ body {
 }
 
 .leftInnerContainerMobile {
-    width: 100%; display: flex; align-items: left; margin: 10px
+    width: 100%; display: flex; 
 
 }
 
@@ -84,5 +89,5 @@ body {
 }
 
 .rightInnerContainerMobile {
-    width: 100%; margin: 10px
+    width: 100%;
 }
