@@ -54,3 +54,10 @@ body {
     }
 }
 
+.eachTitle {
+    margin-left: 10%; text-align: left; margin-bottom: 0
+}
+
+.container {
+    margin-top:10px; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; min-width: 250px
+}
