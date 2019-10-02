@@ -10,40 +10,43 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+10/10
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
 
-
+I added several images with descriptive alt attributes, used approriate headings and paragraph text, implemented footer tag, and linked to external pages. 
 
 (b) CSS features
 
-
+I added padding and margins, modified link's text color, implemented responsive design without using Bootstrap.
 
 (c) Advanced features
 
-
+I utilized both CSS and Javascript to add animation to the website. 
+I used Javascript to re-render the website's layout differently for mobile devices and desktop. Therefore, mobile and desktop users will see the website's content organize differently.
 
 3. How long, in hours, did it take you to complete this assignment?
-
+It took me 5 days
 
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
-
+I consulted StackOverflow post when I tried to add animation to the website and make the website's content organize differently for mobile and desktop users.
 
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
+I consulted my friend who did not take this class. We discussed about the aesthetics of the website.
 
 
 6. Is there anything special we need to know in order to run your code?
+
+Please run index.html file your browser.
 
