@@ -40,7 +40,8 @@ It took me 5 days
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
 I consulted StackOverflow post when I tried to add animation to the website and make the website's content organize differently for mobile and desktop users.
-
+https://stackoverflow.com/questions/487073/how-to-check-if-element-is-visible-after-scrolling
+https://www.w3schools.com/css/css3_animations.asp
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 I consulted my friend who did not take this class. We discussed about the aesthetics of the website.
@@ -48,5 +49,5 @@ I consulted my friend who did not take this class. We discussed about the aesthe
 
 6. Is there anything special we need to know in order to run your code?
 
-Please run index.html file your browser.
+Please run index.html file in your browser.
 
