@@ -106,7 +106,7 @@ function removeMobile(container, leftInnerContainer, rightInnerContainer, hr) {
 }
 
 // change layout upon window's innerWidth
-console.log(window.innerWidth);
+console.log("innerWidth=" + window.innerWidth);
 if (window.innerWidth < 575) {
   var container = document.getElementsByClassName("container");
   var leftInnerContainer = document.getElementsByClassName(
@@ -198,9 +198,9 @@ function isElementInViewport(el) {
   var elemTop = rect.top;
   var elemBottom = rect.bottom;
 
-  console.log("elemTop=" + elemTop);
-  console.log("elemBottom=" + elemBottom);
-  console.log("window.innerHeight=" + window.innerHeight);
+  // console.log("elemTop=" + elemTop);
+  // console.log("elemBottom=" + elemBottom);
+  // console.log("window.innerHeight=" + window.innerHeight);
 
   // Only completely visible elements return true:
   // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
