@@ -74,7 +74,7 @@ body {
 }
 
 .containerMobile {
-    flex-wrap: wrap; border-radius: 0.2rem; display: flex; flex-direction: column; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em; 
+    flex-wrap: wrap; border-radius: 0.2rem; display: flex; flex-direction: column; margin-left:5%; margin-right:5%; max-width: 90%; height: auto; padding: 1em; 
 }
 
 .paddingForContainer {
