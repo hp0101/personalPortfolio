@@ -9,7 +9,7 @@ for (var i = 0; i < animatedElements.length; i++) {
 }
 
 // remove all animation
-setTimeout(function() {
+setTimeout(function () {
   for (var i = animatedElements.length - 1; i >= 0; i--) {
     if (i % 2 == 0) {
       animatedElements[i].classList.remove("fadeInFromLeftToRight");
@@ -19,7 +19,17 @@ setTimeout(function() {
   }
 }, 3000);
 
-function addMobile(container, leftInnerContainer, rightInnerContainer, hr) {
+function addMobile(container, leftInnerContainer, rightInnerContainer, hr, eachTitle) {
+  // add eachTitleMobile
+  for (var i = 0; i < eachTitle.length; i++) {
+    eachTitle[i].classList.add("eachTitleMobile");
+  }
+
+  // remove eachTitle
+  for (var i = eachTitle.length - 1; i >= 0; i--) {
+    eachTitle[i].classList.remove("eachTitle");
+  }
+
   // add and then remove
   // add containerMobile
   for (var i = 0; i < container.length; i++) {
@@ -62,7 +72,18 @@ function addMobile(container, leftInnerContainer, rightInnerContainer, hr) {
   }
 }
 
-function removeMobile(container, leftInnerContainer, rightInnerContainer, hr) {
+function removeMobile(container, leftInnerContainer, rightInnerContainer, hr, eachTitle) {
+
+  // add eachTitle
+  for (var i = 0; i < eachTitle.length; i++) {
+    eachTitle[i].classList.add("eachTitle");
+  }
+
+  // remove eachTitleMobile
+  for (var i = eachTitle.length - 1; i >= 0; i--) {
+    eachTitle[i].classList.remove("eachTitleMobile");
+  }
+
   // add and then remove
   // add container
   for (var i = 0; i < container.length; i++) {
@@ -116,12 +137,13 @@ if (window.innerWidth < 575) {
     "rightInnerContainer"
   );
   var hr = document.getElementsByTagName("hr");
+  var eachTitle = document.getElementsByClassName("eachTitle");
 
-  addMobile(container, leftInnerContainer, rightInnerContainer, hr);
+  addMobile(container, leftInnerContainer, rightInnerContainer, hr, eachTitle);
 }
 
 // change layout upon resizing
-var onresize = function(e) {
+var onresize = function (e) {
   width = e.target.outerWidth;
   height = e.target.outerHeight;
 
@@ -135,8 +157,10 @@ var onresize = function(e) {
       "rightInnerContainer"
     );
     var hr = document.getElementsByTagName("hr");
+    var eachTitle = document.getElementsByClassName("eachTitle");
 
-    addMobile(container, leftInnerContainer, rightInnerContainer, hr);
+    addMobile(container, leftInnerContainer, rightInnerContainer, hr, eachTitle);
+
   } else if (width >= 575) {
     container = document.getElementsByClassName("containerMobile");
     leftInnerContainer = document.getElementsByClassName(
@@ -146,8 +170,9 @@ var onresize = function(e) {
       "rightInnerContainerMobile"
     );
     hr = document.getElementsByTagName("hr");
+    eachTitle = document.getElementsByClassName("eachTitleMobile");
 
-    removeMobile(container, leftInnerContainer, rightInnerContainer, hr);
+    removeMobile(container, leftInnerContainer, rightInnerContainer, hr, eachTitle);
   }
 };
 window.addEventListener("resize", onresize);
@@ -155,7 +180,7 @@ window.addEventListener("resize", onresize);
 // animate element when scroll down
 var containerAnimate = document.getElementsByClassName("animateScroll");
 
-window.onscroll = function() {
+window.onscroll = function () {
   for (var i = 0; i < containerAnimate.length; i++) {
     if (isElementInViewport(containerAnimate[i])) {
       if (containerAnimate[i].getElementsByClassName("leftInnerContainer")[0] != null) {
@@ -165,7 +190,7 @@ window.onscroll = function() {
         containerAnimate[i]
           .getElementsByClassName("rightInnerContainer")[0]
           .classList.add("fadeInFromRightToLeft");
-      } else  {
+      } else {
         containerAnimate[i]
           .getElementsByClassName("leftInnerContainerMobile")[0]
           .classList.add("fadeInFromLeftToRight");

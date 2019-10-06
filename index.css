@@ -69,12 +69,16 @@ body {
     margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
 }
 
+.eachTitleMobile {
+    margin-top: 50px; margin-left: 3%; text-align: left; margin-bottom: 0
+}
+
 .container {
     border-radius: 0.2rem; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em;
 }
 
 .containerMobile {
-    flex-wrap: wrap; border-radius: 0.2rem; display: flex; flex-direction: column; margin-left:5%; margin-right:5%; max-width: 90%; height: auto; padding: 1em; 
+    flex-wrap: wrap; border-radius: 0.2rem; display: flex; flex-direction: column; margin-left:3%; margin-right:3%; max-width: 94%; height: auto; padding: 1em; 
 }
 
 .paddingForContainer {
