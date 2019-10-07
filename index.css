@@ -40,7 +40,7 @@
 }
 
 /* gray out a tag */
-#aHover:hover {
+.aHover:hover {
     filter: gray; /* IE6-9 */
     /* Google Chrome, Safari 6+ & Opera 15+ */
     -webkit-filter: grayscale(1); 
