@@ -42,6 +42,7 @@ It took me 5 days
 I consulted StackOverflow post when I tried to add animation to the website and make the website's content organize differently for mobile and desktop users.
 https://stackoverflow.com/questions/487073/how-to-check-if-element-is-visible-after-scrolling
 https://www.w3schools.com/css/css3_animations.asp
+https://www.w3schools.com/howto/howto_css_switch.asp
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 I consulted my friend who did not take this class. We discussed about the aesthetics of the website.

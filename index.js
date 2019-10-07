@@ -379,9 +379,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-
-// function darkModeFunc() {
-//   if (body.id == "") {
-//   } else if (body.id == "darkMode") {
-//   }
-// }
