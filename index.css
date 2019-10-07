@@ -8,12 +8,12 @@
     z-index: 100;
     position: fixed;
     right: 10px;
-    bottom: 40px;
+    bottom: 60px;
 }
 
 /* button's style */
 .button {
-    width: 160px;
+    width: 120px;
     height: 60px;
     font-size: 15px;
     font-weight: bold;
