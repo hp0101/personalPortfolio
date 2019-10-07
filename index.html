@@ -20,9 +20,9 @@ EMAIL: hpphan@uci.edu
 </head>
 
 <body style="margin: 0">
-    <div class="wrap">
+    <!-- <div class="wrap">
         <button onclick="darkModeFunc()" class="button">Too Bright? Try Dark Mode :)</button>
-    </div>
+    </div> -->
     <!-- intro -->
     <div class="animate">
         <div class="" style="height: 400px; display: flex; align-items: center; flex-direction: column; 
@@ -30,7 +30,8 @@ EMAIL: hpphan@uci.edu
     background-size: cover; ">
             <img src="profilePic.jpg" alt="profilePic" style="border-radius: 50%; max-width: 100%; max-height: 100%;">
             <h1 style="color: white; text-align: center; margin-bottom: 0;">Hung Phan</h1>
-            <p style="color: white; text-align: center; font-weight: bold; font-size: 1.3em;">iOS Developer | Computer Science Undergraduate at UC Irvine</p>
+            <p style="color: white; text-align: center; font-weight: bold; font-size: 1.3em;">iOS Developer | Computer
+                Science Undergraduate at UC Irvine</p>
             <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 100%;">
                 <a class="aHover" href="https://www.linkedin.com/in/hung-p-0b3547162/" style="padding-right: 0.5%">
                     <img src="linkedin.png" style="height: 64px; width: 64px; " alt="linkedin">
@@ -44,14 +45,24 @@ EMAIL: hpphan@uci.edu
             </div>
         </div>
     </div>
+    <!-- rounded switch -->
+    <div style="margin-right: 10px; padding: 5px; display: flex; flex-direction: row; align-items: center; justify-content: right;">
+        <label class="switch" style="margin-right: 5px;">
+            <input type="checkbox" autocomplete="off">
+            <span class="slider round"></span>
+        </label>
+        <p id="toggleText">Too Bright? Try Dark Mode!</p>
+    </div>
     <!-- Summary -->
     <div class="animate">
-        <h2 class="eachTitle">
+        <h2 class="eachTitle" style="margin-top: 0">
             Summary
         </h2>
         <div class="effect container ">
             <p>
-                Seek a full-time Software Engineer position after graduation in June 2020. Experience in developing iOS applications utilizing either Swift or React Native and constructing a full-stack e-commerce website similar to Amazon and eBay.
+                Seek a full-time Software Engineer position after graduation in June 2020. Experience in developing iOS
+                applications utilizing either Swift or React Native and constructing a full-stack e-commerce website
+                similar to Amazon and eBay.
             </p>
         </div>
     </div>
@@ -100,8 +111,9 @@ EMAIL: hpphan@uci.edu
                 </p>
                 <ul>
                     <li>
-                        <a class="green" href="http://www.orangecoastcollege.edu/academics/divisions/business/Documents/COMPUTER%20PROGRAMMING.pdf">http://www.orangecoastcollege.edu/academics/divisions/business/Documents/COMPUTER%20PROGRAMMING.pdf
-            </a>
+                        <a class="green"
+                            href="http://www.orangecoastcollege.edu/academics/divisions/business/Documents/COMPUTER%20PROGRAMMING.pdf">http://www.orangecoastcollege.edu/academics/divisions/business/Documents/COMPUTER%20PROGRAMMING.pdf
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -125,27 +137,35 @@ EMAIL: hpphan@uci.edu
                 <ul>
                     <li>Create 2 mobile applications leveraging React Native (RN) framework.</li>
                     <li>Apply Firebase Web SDK as a backend server.</li>
-                    <li>Employ RN Router Flux library to implement navigation and communication between different screens</li>
+                    <li>Employ RN Router Flux library to implement navigation and communication between different
+                        screens</li>
                     <li>Render 2D objects using RN Canvas library</li>
                     <li>Enable biometric authentication via RN Touch ID library.</li>
                     <li>Scale RN apps accordingly for any devices by employing RN Responsive Screen library.</li>
                     <li>Deploy other RN libraries such as QRCodeScanner, KeyboardAvoidingView, etc.</li>
                     <li>Convert one of previous React Native mobile applications to Swift.</li>
                     <li>Utilize Firebase iOS SDK as a backend server.</li>
-                    <li>Track users' location live by operating 3 beacon devices that communicate with the app through Bluetooth.
+                    <li>Track users' location live by operating 3 beacon devices that communicate with the app through
+                        Bluetooth.
                     </li>
-                    <li>Display users' visit history in a table view with a custom filter that sorts users’ visit history by date, week, month and year.</li>
+                    <li>Display users' visit history in a table view with a custom filter that sorts users’ visit
+                        history by date, week, month and year.</li>
                     <li>Render users' time spent in each visit history in a bar chart by using iOS Charts library.</li>
                     <li>Use an Apple framework called PassKit to support saving users’ QR code to Apple Wallet app.</li>
-                    <li>Leverage other Swift libraries such as NVActivityIndicatorView, NavigationDrawer, FloatingPanel, Kontakt SDK, etc.</li>
+                    <li>Leverage other Swift libraries such as NVActivityIndicatorView, NavigationDrawer, FloatingPanel,
+                        Kontakt SDK, etc.</li>
                 </ul>
                 <!-- Docs -->
-                <div style="flex-wrap: wrap; display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; width: 100%; flex-wrap: wrap;">
-                    <div onclick="location.href='https://github.com/team-dante';" class="effect proofBoxBackground" style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
+                <div
+                    style="flex-wrap: wrap; display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; width: 100%; flex-wrap: wrap;">
+                    <div onclick="location.href='https://github.com/team-dante';" class="effect proofBoxBackground"
+                        style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
                         <img src="danteIcon.png" style="object-fit: cover; width: 100%; height: 60%" alt="Dante Icon" />
                         <p class="proofBox">GitHub Repository</p>
                     </div>
-                    <div onclick="location.href='https://drive.google.com/a/uci.edu/file/d/1ZGkN2tKd_yj1q482ZqoaFYeZmZIvjre_/view?usp=drivesdk';" class="effect proofBoxBackground" style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
+                    <div onclick="location.href='https://drive.google.com/a/uci.edu/file/d/1ZGkN2tKd_yj1q482ZqoaFYeZmZIvjre_/view?usp=drivesdk';"
+                        class="effect proofBoxBackground"
+                        style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
                         <img src="danteIcon.png" style="object-fit: cover; width: 100%; height: 60%" alt="Dante Icon" />
                         <p class="proofBox">View Documentation</p>
                     </div>
@@ -185,12 +205,15 @@ EMAIL: hpphan@uci.edu
                     </li>
                 </ul>
                 <!-- Docs -->
-                <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; width: 100%; flex-wrap: wrap;">
-                    <div onclick="location.href='https://streamable.com/7eddg';" class="effect proofBoxBackground" style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
+                <div
+                    style="display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; width: 100%; flex-wrap: wrap;">
+                    <div onclick="location.href='https://streamable.com/7eddg';" class="effect proofBoxBackground"
+                        style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
                         <img src="bizsns.png" style="object-fit: cover; width: 100%; height: 60%" alt="BizSNS" />
                         <p class="proofBox">Phase 1 of BizSNS app</p>
                     </div>
-                    <div onclick="location.href='https://streamable.com/dw3ud';" class="effect proofBoxBackground" style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
+                    <div onclick="location.href='https://streamable.com/dw3ud';" class="effect proofBoxBackground"
+                        style="margin-top: 10px; cursor: pointer; display:flex; align-items: center; flex-direction: column; width: 30%; height: 150px;  min-width: 125px;">
                         <img src="bizsns.png" style="object-fit: cover; width: 100%; height: 60%" alt="BizSNS" />
                         <p class="proofBox">Phase 2 of BizSNS app</p>
                     </div>
@@ -213,9 +236,14 @@ EMAIL: hpphan@uci.edu
                 <p style="font-weight: bold;">
                     Fabflix Movie Database - Android Application
                 </p>
-                <p>Develop an e-commerce app that lets users find their favorite movies. The movie’s search functionality uses MySQL Full-Text Search and it can guess users' movies with one keyword or a few characters that are entered in search box. The
-                    e-commerce app, Fabflix Movie Database - Android Application, is created using Android Studio. The Android application sends HTTP requests to a back-end that is made up of Tomcat web server and MySQL database management system. The
-                    back end processes the requests and sends movie data to client side. The movie data is then restructured in a nice format utilizing Android ListView. </p>
+                <p>Develop an e-commerce app that lets users find their favorite movies. The movie’s search
+                    functionality uses MySQL Full-Text Search and it can guess users' movies with one keyword or a few
+                    characters that are entered in search box. The
+                    e-commerce app, Fabflix Movie Database - Android Application, is created using Android Studio. The
+                    Android application sends HTTP requests to a back-end that is made up of Tomcat web server and MySQL
+                    database management system. The
+                    back end processes the requests and sends movie data to client side. The movie data is then
+                    restructured in a nice format utilizing Android ListView. </p>
             </div>
         </div>
     </div>
@@ -231,9 +259,15 @@ EMAIL: hpphan@uci.edu
                     Fabflix Movie Database - Web Application
                 </p>
                 <p>
-                    Develop an e-commerce website similar to Amazon and eBay that lets users find their favorite movies, add movies to cart, and pay for movies. The movie search functionality uses MySQL Full-Text Search and has autocomplete features. The e-commerce website,
-                    Fabflix Movie Database - web application, is constructed using front-end and back-end separation architecture. The front-end is built from HTML, CSS, Bootstrap, Javascript, jQuery, and AJAX. The back-end is made up of a Tomcat web
-                    server that handles HTTP requests from client side and sends queries to the MySQL database management system. The Tomcat web server then receives movie data from the MySQL database and sends it to client side. The movie database -
+                    Develop an e-commerce website similar to Amazon and eBay that lets users find their favorite movies,
+                    add movies to cart, and pay for movies. The movie search functionality uses MySQL Full-Text Search
+                    and has autocomplete features. The e-commerce website,
+                    Fabflix Movie Database - web application, is constructed using front-end and back-end separation
+                    architecture. The front-end is built from HTML, CSS, Bootstrap, Javascript, jQuery, and AJAX. The
+                    back-end is made up of a Tomcat web
+                    server that handles HTTP requests from client side and sends queries to the MySQL database
+                    management system. The Tomcat web server then receives movie data from the MySQL database and sends
+                    it to client side. The movie database -
                     web application is deployed on a production server leveraging Amazon Web Services.
                 </p>
             </div>
@@ -251,7 +285,8 @@ EMAIL: hpphan@uci.edu
                     The Web Developer Bootcamp Online Course
                 </p>
                 <p>
-                    Develop a portfolio website and a blog website from scratch using HTML, CSS, Javascript, Bootstrap, Semantic UI, Node.js, Express.js, MongoDB, Nodemailer, Git, and Heroku.
+                    Develop a portfolio website and a blog website from scratch using HTML, CSS, Javascript, Bootstrap,
+                    Semantic UI, Node.js, Express.js, MongoDB, Nodemailer, Git, and Heroku.
                 </p>
             </div>
         </div>
@@ -269,7 +304,8 @@ EMAIL: hpphan@uci.edu
             <hr>
             <div class="rightInnerContainer">
                 <p>
-                    Programming, Web Development, Android Development, iOS Development, Mobile Applications, Software Testing.
+                    Programming, Web Development, Android Development, iOS Development, Mobile Applications, Software
+                    Testing.
                 </p>
             </div>
         </div>
@@ -283,16 +319,20 @@ EMAIL: hpphan@uci.edu
             <hr>
             <div class="rightInnerContainer">
                 <p>
-                    Javascript, MySQL, Java, CSS, jQuery, Tomcat, Semantic UI, MongoDB, C++, Eclipse, Bash, Google Cloud Platform, React Native, Github, Git, AJAX, Bootstrap, Node.js, Amazon Web Services, Python, HTML, Ubuntu, Xcode, Relational Databases, Visual Studio Code,
-                    Express.js, Cloud9 IDE, JMeter, Socket.io, Visual Studio IDE, Heroku, Load Balancing, Android Studio, Firebase, Figma, JUnit.
+                    Javascript, MySQL, Java, CSS, jQuery, Tomcat, Semantic UI, MongoDB, C++, Eclipse, Bash, Google Cloud
+                    Platform, React Native, Github, Git, AJAX, Bootstrap, Node.js, Amazon Web Services, Python, HTML,
+                    Ubuntu, Xcode, Relational Databases, Visual Studio Code,
+                    Express.js, Cloud9 IDE, JMeter, Socket.io, Visual Studio IDE, Heroku, Load Balancing, Android
+                    Studio, Firebase, Figma, JUnit.
                 </p>
             </div>
         </div>
     </div>
 
     <footer style="margin-left: 10%; margin-right: 10%; margin-top: 20px">
-        <p style="text-align: center">All rights reserved. Created and maintained by <a class="green" href="mailto:hpphann@gmail.com">Hung
-        Phan</a>.</p>
+        <p style="text-align: center">All rights reserved. Created and maintained by <a class="green"
+                href="mailto:hpphann@gmail.com">Hung
+                Phan</a>.</p>
     </footer>
 
     <script src="index.js"></script>
