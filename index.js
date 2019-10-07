@@ -236,3 +236,109 @@ function isElementInViewport(el) {
   isVisible = elemTop + 50 < window.innerHeight;
   return isVisible;
 }
+
+// Dark Mode
+function darkModeFunc() {
+  var body = document.getElementsByTagName("body")[0];
+
+
+  if (body.id == "") {
+
+    // add dark background and white text
+    body.id = "darkMode"
+
+    // change button's property
+    var button = document.getElementsByClassName("button");
+    button[0].innerHTML = "Too Dark? Try Bright Mode :)"
+    // add buttonBright
+    button[0].classList.add("buttonBright");
+    // remove button
+    button[0].classList.remove("button");
+
+    // change class "effect" to gray container
+    var effect = document.getElementsByClassName("effect");
+    // add effectDark
+    for (var i = 0; i < effect.length; i++) {
+      effect[i].classList.add("effectDark");
+    }
+    // remove effect
+    for (var i = effect.length - 1; i >= 0; i--) {
+      effect[i].classList.remove("effect");
+    }
+
+    // change blue hyperlink to green
+    var green = document.getElementsByClassName("green");
+    // add green
+    for (var i = 0; i < green.length; i++) {
+      green[i].style.color = "#00d65f"
+    }
+
+    // change proofBox's text from blue to green
+    var proofBox = document.getElementsByClassName("proofBox");
+    // add proofBoxDark
+    for (var i = 0; i < proofBox.length; i++) {
+      proofBox[i].classList.add("proofBoxDark");
+    }
+    // remove proofBox
+    for (var i = proofBox.length - 1; i >= 0; i--) {
+      proofBox[i].classList.remove("proofBox");
+    }
+
+    // change proofBoxBackground to gray in order to hide the class "effect"
+    var proofBoxBackground = document.getElementsByClassName("proofBoxBackground");
+    // add #3f3f3f
+    for (var i = 0; i < proofBoxBackground.length; i++) {
+      proofBoxBackground[i].style.backgroundColor = "#3f3f3f"
+    }
+
+  }
+  else if (body.id == "darkMode") {
+
+    // remove dark background and white text
+    body.id = ""
+
+    // change button's property
+    var button = document.getElementsByClassName("buttonBright");
+    button[0].innerHTML = "Too Bright? Try Dark Mode :)"
+    // add button
+    button[0].classList.add("button");
+    // remove buttonBright
+    button[0].classList.remove("buttonBright");
+
+    // change the gray container back to class "effect"
+    var effect = document.getElementsByClassName("effectDark");
+    // add effect
+    for (var i = 0; i < effect.length; i++) {
+      effect[i].classList.add("effect");
+    }
+    // remove effectDark
+    for (var i = effect.length - 1; i >= 0; i--) {
+      effect[i].classList.remove("effectDark");
+    }
+
+    // change proofBoxDark's text from green to blue
+    var proofBox = document.getElementsByClassName("proofBoxDark");
+    // add proofBox
+    for (var i = 0; i < proofBox.length; i++) {
+      proofBox[i].classList.add("proofBox");
+    }
+    // remove proofBoxDark
+    for (var i = proofBox.length - 1; i >= 0; i--) {
+      proofBox[i].classList.remove("proofBoxDark");
+    }
+
+    // change green hyperlink to blue
+    var green = document.getElementsByClassName("green");
+    // remove green
+    for (var i = 0; i < green.length; i++) {
+      green[i].style.color = "blue"
+    }
+
+    // change proofBoxBackground to transparent in order to activate the class "effect"
+    var proofBoxBackground = document.getElementsByClassName("proofBoxBackground");
+    // add transparent
+    for (var i = 0; i < proofBoxBackground.length; i++) {
+      proofBoxBackground[i].style.backgroundColor = "transparent"
+    }
+  }
+}

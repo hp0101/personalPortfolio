@@ -1,20 +1,99 @@
-/* box shadow effect */
-.effect
-{
-    position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+#darkMode {
+    background-color: black;
+    color: white
 }
 
+/* floating button's position */
+.wrap {
+    z-index: 100;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+}
+
+/* button's style */
+.button {
+    width: 160px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #010405;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 3px #999;
+}
+.buttonBright {
+    width: 160px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #010405;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 2px 3px #999;
+}
+
+/* gray out a tag */
+#aHover:hover {
+    filter: gray; /* IE6-9 */
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-filter: grayscale(1); 
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* box shadow effect */
+.effect {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effectDark {
+    background-color: #171717;
+    /* position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; */
+}
+
+
 /* disable horizontal scrolling */
-html, body {
+
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
- }
+}
 
 a:visited {
-    color: blue
+    color: blue;
+}
+
+#green {
+    color: blue;
+}
+
+.proofBox {
+    text-align: center; 
+    color: blue; 
+    font-weight: bold
+}
+
+.proofBoxBackground {   
+    background-color: transparent;
+}
+
+.proofBoxDark {
+    text-align: center; 
+    color: #00d65f; 
+    font-weight: bold
 }
 
 body {
@@ -23,7 +102,7 @@ body {
 }
 
 .fadeInFromLeftToRight {
-    animation: fadeInFromLeftToRight 1s; 
+    animation: fadeInFromLeftToRight 1s;
 }
 
 .fadeInFromRightToLeft {
@@ -39,7 +118,7 @@ body {
 }
 
 @keyframes fadeInFromLeftToRight {
-    0% { 
+    0% {
         opacity: 0;
         transform: translate3d(-100%, 0, 0);
     }
@@ -50,7 +129,7 @@ body {
 }
 
 @keyframes fadeInFromRightToLeft {
-    0% { 
+    0% {
         opacity: 0;
         transform: translate3d(100%, 0, 0);
     }
@@ -66,36 +145,61 @@ body {
 }
 
 .eachTitle {
-    margin-top: 50px; margin-left: 10%; text-align: left; margin-bottom: 0
+    margin-top: 50px;
+    margin-left: 10%;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .eachTitleMobile {
-    margin-top: 50px; margin-left: 3%; text-align: left; margin-bottom: 0
+    margin-top: 50px;
+    margin-left: 3%;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .container {
-    border-radius: 0.2rem; display: flex; margin-left:10%; margin-right:10%; max-width: 80%; height: auto; padding: 1em;
+    border-radius: 0.2rem;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+    height: auto;
+    padding: 1em;
 }
 
 .containerMobile {
-    flex-wrap: wrap; border-radius: 0.2rem; display: flex; flex-direction: column; margin-left:3%; margin-right:3%; max-width: 94%; height: auto; padding: 1em; 
+    flex-wrap: wrap;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 94%;
+    height: auto;
+    padding: 1em;
 }
 
 .paddingForContainer {
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .leftInnerContainer {
-    width: 30%; display: flex; align-items: center; justify-content: center; margin: 10px
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px
 }
 
 .leftInnerContainerMobile {
-    width: 100%; display: flex; 
-
+    width: 100%;
+    display: flex;
 }
 
 .rightInnerContainer {
-    width: 70%; margin: 10px
+    width: 70%;
+    margin: 10px
 }
 
 .rightInnerContainerMobile {
