@@ -31,8 +31,11 @@ I added padding and margins, modified link's text color, implemented responsive 
 
 (c) Advanced features
 
+I leveraged nested selectors to specify format.
+I created a complex page layout. 
 I utilized both CSS and Javascript to add animation to the website. 
 I used Javascript to re-render the website's layout differently for mobile devices and desktop. Therefore, mobile and desktop users will see the website's content organize differently.
+I used Javascript to enable Dark Mode.
 
 3. How long, in hours, did it take you to complete this assignment?
 It took me 5 days
