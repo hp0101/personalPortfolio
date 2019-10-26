@@ -385,6 +385,6 @@ function isElementInViewport(el) {
   // elemBottom >= 0 is when the element is scrolled up past the screen
   // elemTop < window.innerHeight is when the element is scrolled down and appears in the screen
   // isVisible = elemTop + 50 < window.innerHeight && elemBottom >= 0;
-  isVisible = elemTop + 50 < window.innerHeight;
+  isVisible = elemTop + 40 < window.innerHeight;
   return isVisible;
 }
