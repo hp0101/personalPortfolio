@@ -1,6 +1,6 @@
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-if (!isSafari) {
+// if (!isSafari) {
   // Dark Mode
   document.addEventListener("DOMContentLoaded", function () {
     var checkbox = document.querySelector('input[type="checkbox"]');
@@ -390,4 +390,4 @@ if (!isSafari) {
     isVisible = elemTop + 40 < window.innerHeight;
     return isVisible;
   }
-}
+// }
